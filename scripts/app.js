@@ -1,5 +1,5 @@
 //The home_url of your WordPress install. Must be https to work properly
-var base_url = '' //this is where you'll add the wordpress base url;
+var base_url = ''; //this is where you'll add the wordpress base url;
 
 (function() {
   'use strict';
@@ -12,7 +12,7 @@ var base_url = '' //this is where you'll add the wordpress base url;
   //get data
   //TODO add REST API call
   app.getData = async function(){
-		app.data  = await (await fetch('./test-api.php')); //TODO change to REST API 
+		app.data  = await (await fetch('./test-api.php')).json(); //TODO change to REST API 
 		app.dataUpdate();
 	}
 

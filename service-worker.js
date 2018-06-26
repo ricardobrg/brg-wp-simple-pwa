@@ -6,10 +6,8 @@ let cacheName = 'brg-wp-simple-pwa-1';
 let filesToCache = [
   './',
   './index.html',
-  './scripts/app.js',
-  './scripts/materialize.min.js',
-  './styles/style.css',
-  './styles/materialize.min.css',
+  './scripts/app.js', 
+  './styles/style.css'
 ];
 
 self.addEventListener('install', function(e) {
